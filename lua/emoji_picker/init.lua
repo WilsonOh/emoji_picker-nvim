@@ -61,7 +61,7 @@ end
 
 M.setup = function(user_config)
   if user_config then
-    vim.tbl_deep_extend("force", config, user_config)
+    config = vim.tbl_deep_extend("force", config, user_config)
   end
   vim.api.nvim_create_user_command("EmojiPicker", M.open_win, {})
 end
