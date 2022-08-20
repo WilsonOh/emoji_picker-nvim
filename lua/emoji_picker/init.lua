@@ -11,7 +11,7 @@ local config = {
     style = "minimal",
     border = "rounded",
   },
-  emoji_list = require("emoji_picker-nvim.emojis"),
+  emoji_list = require("emoji_picker.emojis"),
 }
 
 local get_char_at_cursor = function()
