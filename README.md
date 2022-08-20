@@ -10,12 +10,12 @@ However, I just wanted a quick and dirty way to have the emojis displayed in a g
 ## Installation
 ### Using [packer](https://github.com/wbthomason/packer.nvim)
 ```lua
-  use({
-    "WilsonOh/emoji_picker-nvim",
-    config = function()
-      require("emoji_picker").setup()
-    end,
-  })
+use({
+  "WilsonOh/emoji_picker-nvim",
+  config = function()
+    require("emoji_picker").setup()
+  end,
+})
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ This plugin does not set any keymaps. The plugin can be called using the `EmojiP
 ### Navigation and selecting
 Within the emoji picker window, press `q` or `esc` to close out of the window. Use the usual navigation keys to move around in the window (`Tab` and `Shift-Tab` are set to move right and left in the window) and press `Enter` to select an emoji.
 
-### Configuration
+## Configuration
 ### Default configuration
 ```lua
 local config = {
