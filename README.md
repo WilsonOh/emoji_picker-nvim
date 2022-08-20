@@ -23,6 +23,10 @@ use({
 This plugin does not set any keymaps. The plugin can be called using the `EmojiPicker` ex-command or `require("emoji_picker").open_win()` in lua.
 ### Navigation and selecting
 Within the emoji picker window, press `q` or `esc` to close out of the window. Use the usual navigation keys to move around in the window (`Tab` and `Shift-Tab` are set to move right and left in the window) and press `Enter` to select an emoji.
+### Keymap used in demo
+```lua
+vim.keymap.set("i", "<M-e>", "<cmd>EmojiPicker<cr>")
+```
 
 ## Configuration
 ### Default configuration
