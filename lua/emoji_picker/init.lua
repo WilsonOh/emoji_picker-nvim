@@ -64,7 +64,6 @@ M.setup = function(user_config)
     vim.tbl_deep_extend("force", config, user_config)
   end
   vim.api.nvim_create_user_command("EmojiPicker", M.open_win, {})
-  vim.keymap.set("i", "<M-e>", "<cmd>EmojiPicker<cr>")
 end
 
 return M
